@@ -1,0 +1,20 @@
+.home-title {
+    margin-top: 16px;
+}
+
+.team-view {
+    margin-top: 16px;
+}
+
+img {
+    align-self: center;
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+}
+
+.card-team {
+    margin: 10px;
+}

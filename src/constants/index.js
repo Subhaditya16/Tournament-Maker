@@ -1,0 +1,4 @@
+export const ADD_TEAM = "ADD_TEAM";
+export const END_MATCH = "END_MATCH";
+export const UPDATE_MATCH_SCORE = "UPDATE_MATCH_SCORE";
+export const SET_SELECTED_MATCH = "SET_SELECTED_MATCH";
