@@ -18,8 +18,18 @@ class Match {
         this.score_one= 0
         this.score_two= 0
     }
+    static emptyMatch(){
+        return new Match(null, null)
+    }
     setWinner(winner){
         this.winner=winner
+    }
+    getWinner(){
+        if(this.winner===Match.TIE){
+            return null;
+        } else if(this.winner===Match.TEAM_ONE || this.winner===Match.TEAM_TWO) {
+            return this[this.winner];
+        }
     }
     setWinnerByScore(){
         if(this.score_one>this.score_two){

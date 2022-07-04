@@ -1,4 +1,4 @@
-import { ADD_TEAM, END_MATCH,SET_SELECTED_MATCH, UPDATE_MATCH_SCORE } from "../constants";
+import { ADD_TEAM, END_MATCH,SET_SELECTED_MATCH, UPDATE_MATCH_SCORE,GENERATE_NEW_BRACKET } from "../constants";
 
 export const addTeam = (team) => ({
     type: ADD_TEAM,
@@ -22,4 +22,9 @@ export const updateMatchScore = (score_one,score_two,match_id) => ({
         score_two,
         match_id
     }
+})
+
+export const generateNewBracket =(teams) => ({
+    type: GENERATE_NEW_BRACKET,
+    teams
 })
